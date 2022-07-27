@@ -10,8 +10,9 @@ function reverseWord (req, res) {
 
         res.status(200).json(response);
     } catch (e) {
+        const message = e.message || e
         console.error(e);
-        res.status(400).send(e.message);
+        res.status(400).send(message);
     };
 };
 
