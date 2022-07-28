@@ -25,7 +25,7 @@ describe('Current Reducer', () => {
         })))
     })
 
-    it('Should add the payload received after the API call in the "reverse" property.', () => {
+    it('Should add the value received after calling the API in the "reverse" property.', () => {
         expect(currentReducer(initialState, search('monster')).toEqual(expect.objectContaining({
             reverse: 'retsnom'
         })))
