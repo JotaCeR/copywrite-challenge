@@ -3,7 +3,7 @@ import styles from './SearchBar.module.sass'
 import { Button, TextField } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { useDispatch } from 'react-redux'
-import { search, clean } from '../../reducer/currentSlice'
+import { search } from '../../reducer/currentSlice'
 
 export default function SearchBar () {
     const theme = useTheme()
