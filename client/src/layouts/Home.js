@@ -4,11 +4,10 @@ import ShowResults from '../components/ShowResults/ShowResults'
 import styles from './Home.module.sass'
 
 export default function Home () {
-
-    return (
-        <div className={styles.display} >
-            <SearchBar />
-            <ShowResults />
-        </div>
-    )
+  return (
+    <div className={styles.display}>
+      <SearchBar />
+      <ShowResults />
+    </div>
+  )
 }

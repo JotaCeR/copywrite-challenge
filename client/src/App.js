@@ -1,10 +1,9 @@
-import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
-import DefaultHeader from './components/DefaultHeader';
+import DefaultHeader from './components/DefaultHeader'
 import Home from './layouts/Home'
 
-function App() {
+function App () {
   const theme = createTheme({
     palette: {
       primary: {
@@ -31,15 +30,15 @@ function App() {
   })
 
   return (
-    <ThemeProvider theme={theme} >
-      <div className="App">
+    <ThemeProvider theme={theme}>
+      <div className='App'>
         <Routes>
           <Route exact path='/icon' element={<DefaultHeader />} />
           <Route path='/' element={<Home />} />
         </Routes>
       </div>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
