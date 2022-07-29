@@ -10,7 +10,9 @@ const store = configureStore({
         last: lastReducer,
         history: historyReducer
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+        serializableCheck: false
+    }).concat(logger),
     devTools: true
 });
 
