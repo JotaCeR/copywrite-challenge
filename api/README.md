@@ -6,7 +6,7 @@ This server can be used either remotely or locally.
 
 ## Remote
 
-
+> [Link]()
 
 ## Local
 You need to either clone or fork this repository. Once there you only need to open a terminal standing on ```./api``` folder and run the following commands:

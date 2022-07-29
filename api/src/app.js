@@ -7,8 +7,8 @@ const server = express()
 server.name = 'API'
 
 server.use(morgan('dev'))
-server.use(express.json({limit: '50mb'}))
-server.use(express.urlencoded({limit: '50mb', extended: false}))
+server.use(express.json({ limit: '50mb' }))
+server.use(express.urlencoded({ limit: '50mb', extended: false }))
 server.use(cors())
 
 server.use('/', routes)
