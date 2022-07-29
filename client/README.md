@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Frontend
+The following frontend it's a really simple client which shows a very simple **search bar** where anybody can type in the text that whish to *reverse*. And below a simple board whil eventually show the resulting **text**.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developed under the __technical challenge__ for Coprywrite co enterprise for a remote *fullstack web developer* position.
 
-## Available Scripts
+This client can be used either remotelly or locally.
 
-In the project directory, you can run:
+## Remote
 
-### `npm start`
+> [Link](https://copywrite-reverse-word.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Local
+You need to either clone or fork this repository. Once there you only need to open a terminal standing on the ```./client``` directory and run the following commands:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+$ npm install
+```
+```
+$ npm start
+```
 
-### `npm test`
+If you are using *node package manager* otherwise you need to run the proper command for your own package manager.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once done, you are ready to work with this client! Running on **http://localhost:3000/**
 
-### `npm run build`
+### Usage
+This client currently counts only with one *functional* route:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+/
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+and a *legacy* route with original **npx create-react-app** header.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+/icon
+```
+<hr>
 
-### `npm run eject`
+> **Search Bar:** 
+On the top of the screen a wide red bar with a textfield displays. The *send* button remains __disabled__ until some **text** may be type on the named textfield when the button will enable *colorizing* itself.
+This is the main function of the client, allowing you to automatically **reverse** any text you introduce in the textfield after pressing the *Send* button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<hr>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> **Dashboard:**
+The main screen displays a smaller board which eventually will show the *results* of the proper button sendings. The resulting **text** from any user search will be displayed on the *Last Result* section. While the history of the __last__ 10 searchs will be shown below on the *Results* section under the form of a list.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<hr>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Develop
+This frontend was built for **Copywrite (CO)** as part of a __technical challenge__ for a remote *fullstack web developer* position. The ```stack```is: [React](https://en.reactjs.org/) + [Redux](https://redux.js.org/) mainly but also for *developing* purposes were use other technologies such as: [SASS](https://sass-lang.com/) and [@MUI](https://mui.com/) for enhancing **UX/UI** construction. Alson [Jest](https://jestjs.io/) and [Standard](https://standardjs.com/) were used along the developing process.
 
-## Learn More
+### Testing
+The process of mounting and building the server was under the implementation of **TDD/BDD** philosophy for *redux/toolkit* slices. More specifically their corresponding **actions** and **reducers**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Unit testing was made for that purposes and the beforehand mentioned main technology was **Jest** with standard default **testing-library**.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In case of running the client **locally** you can check this out by running on your terminal (always standing on **./client** directory):
+```
+npm run test
+```

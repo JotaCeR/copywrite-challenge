@@ -1,15 +1,17 @@
 # Backend
 The following backend it's a really simple API which returns *reverted* the received **text** query param by consuming it's only endpoint.
+
+
 Developed under the __technical challenge__ for Coprywrite co enterprise for a remote *fullstack web developer* position.
 
 This server can be used either remotely or locally.
 
 ## Remote
 
-> [Link]()
+> [Link](https://heroku-reverse-api.herokuapp.com/)
 
 ## Local
-You need to either clone or fork this repository. Once there you only need to open a terminal standing on ```./api``` folder and run the following commands:
+You need to either clone or fork this repository. Once there you only need to open a terminal standing on the ```./api``` directory and run the following commands:
 
 ```
 $ npm install
@@ -18,7 +20,7 @@ $ npm install
 $ npm start
 ```
 
-If you are using *node package manager* otherway you need to run the command for your proper package manager.
+If you are using *node package manager* otherwise you need to run the proper command for your own package manager.
 
 Once done, you are ready to work with this server! Running on **http://localhost:3001/**
 
@@ -47,7 +49,7 @@ This server currently counts only with one endpoint:
 ```
 
 ## Develop
-The backend was built for **Copywrite (CO)** as part of a __technical challenge__ for a remote *fullstack web developer* position. The ```stack``` used was: [Node](https://nodejs.org/es/) + [Express](https://expressjs.com/es/) mainly but also for *developing* purposes were use other technologies such as: [Morgan](https://github.com/expressjs/morgan#readme), [Nodemon](https://nodemon.io/) and [Standard](https://standardjs.com/) as a formatter.
+This backend was built for **Copywrite (CO)** as part of a __technical challenge__ for a remote *fullstack web developer* position. The ```stack``` is: [Node](https://nodejs.org/es/) + [Express](https://expressjs.com/es/) mainly but also for *developing* purposes were use other technologies such as: [Morgan](https://github.com/expressjs/morgan#readme), [Nodemon](https://nodemon.io/) and [Standard](https://standardjs.com/) as a formatter.
 
 For purposes of *scalating capability* despite counting with only one endpoint the server architechture counts with a __solid__ structure of routing plus the respective **controller** for ```/iecho``` route and a **middleware** for error handling and bad requests.
 
