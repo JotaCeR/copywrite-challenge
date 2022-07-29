@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const baseConfig = {
-  baseURL: 'http://localhost:3001/',
+  baseURL: 'https://heroku-reverse-api.herokuapp.com/',
   headers: {
     'Content-Type': 'application/json'
   }

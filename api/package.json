@@ -4,7 +4,7 @@
   "description": "Words API for Copywrite technical challenge.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -L",
+    "start": "node index.js",
     "test": "mocha ./tests/**/*.spec.js"
   },
   "author": "JotaCeR",
