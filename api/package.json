@@ -19,7 +19,6 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.19",
     "standard": "^17.0.0",
-    "supertest": "^6.2.4",
-    "supertest-session": "^4.1.0"
+    "supertest": "^6.2.4"
   }
 }
